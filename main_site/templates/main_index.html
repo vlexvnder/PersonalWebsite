@@ -1,5 +1,4 @@
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>Alexander Goldberg</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js" integrity="sha512-dqw6X88iGgZlTsONxZK9ePmJEFrmHwpuMrsUChjAw1mRUhUITE5QU9pkcSox+ynfLhL15Sv2al5A0LVyDCmtUw==" crossorigin="anonymous"></script>
@@ -8,29 +7,41 @@
 	body {
 	text-align: center;
 	margin-top: 50px;
+
 	}
-	.s {
-	color: black;
-	text-decoration: none;
-	}
+
+
 </style>
 <body>
+
+    <!--TODO: Set up mobile version redirect-->
+<div>
 	<h1>Alex Goldberg</h1>
 	<p>Have some {{sweet}}!</p>
-	<div class="ui one column centered grid">
+	<div class="ui one column centered grid" >
 		<div class="four wide column">
 			<div class="ui raised segment">
-				<a class="ui red ribbon label">Projects</a>
-				<p>   
-				<p><b>Sentiment Analysis </b><a href="https://github.com/emote-sentiment-analysis/backend"><span class="ui label"><i class="black github icon"></i>Source</span></a> <a href="/sentiment"><span class="ui label"><i class="red globe icon"></i> Live!</span></a> </p>
-				<span><b>Morse Code Chat </b><a href="https://github.com/vlexvnder/Morse-Code-Chat"><span class="ui label"><i class="black github icon"></i>Source</span></a> <a href="/morse"><span class="ui label"><i class="red globe icon"></i> Live!</span></a> </span>
-				</p>
+                <a class="ui red ribbon label">Projects</a>
+                <div class="ui three column grid">
+                    <div class="seven wide column">
+                        <p><b>Sentiment Analysis</b></p>
+                        <p><b>Morse Code Chat</b></p>
+                    </div>
+
+                    <div class="eight wide column">
+                        <p><span><a href="https://github.com/emote-sentiment-analysis/backend"><span class="ui label"><i class="black github icon"></i>Source</span></a> <a href="/sentiment"><span class="ui label"><i class="red globe icon"></i> Live!</span></a></span></p>
+                        <p><span><a href="https://github.com/vlexvnder/Morse-Code-Chat"><span class="ui label"><i class="black github icon"></i>Source</span></a> <a href="/morse"><span class="ui label"><i class="red globe icon"></i> Live!</span></a></span></p>
+                    </div>
+
+                </div>
+
 				<a class="ui blue ribbon label">Contact</a> 
 				<p>
 				<p><a  href="https://github.com/vlexvnder"><i style="color: black;" class="github icon"></i> Github</a></p>
-				<p><a href="https://www.linkedin.com/in/alexandersgoldberg/"><i style="color: black;" class="linkedin icon"></i>Linkedin</a></p>
+				<p><a href="https://www.linkedin.com/in/alexandersgoldberg/"><i style="color: black;" class="linkedin icon"></i> Linkedin</a></p>
 				</p>
 			</div>
 		</div>
-	</div>
+    </div>
+</div>
 </body>
