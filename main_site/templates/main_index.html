@@ -2,6 +2,8 @@
 	<title>Alexander Goldberg</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js" integrity="sha512-dqw6X88iGgZlTsONxZK9ePmJEFrmHwpuMrsUChjAw1mRUhUITE5QU9pkcSox+ynfLhL15Sv2al5A0LVyDCmtUw==" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
 </head>
 <style>
 	body {
@@ -14,19 +16,53 @@
         body{ zoom: 200%;}
 
     }   
-
-
 </style>
 <body>
 
+<script>
 
+    $(document).ready(function() {
+    var typed = new Typed('.sweet', {
+        strings: ['Have some {{veggie}}!^500', 'Have some {{sweet}}!^5000','On second thought, maybe some {{sweet2}}!' ],
+        showCursor: false,
+        smartBackspace: true, // Default value
+        typeSpeed: 50,
+        backSpeed: 100
+    });
+});
+</script>
 <div>
 	<h1>Alex Goldberg</h1>
-	<p>Have some {{sweet}}!</p>
+	<p class="sweet"></p>
 	<div class="ui centered grid" >
+
 		<div class="four wide computer twelve wide tablet twelve wide mobile column">
 			<div class="ui raised segment">
+                <div class="computer only ui left close rail">
+                <div class="ui segment">
+                    Left Rail Content
+                </div>
+                </div>                
+                <a class="ui blue ribbon label">Bio</a>
+                <div>
+                    <p>
+                        <p><i class="graduation cap icon"></i>Freshman @ UC Berkeley</p>
+                        <p><i class="book icon"></i>Studying Computer Science, Data Science, and Business</p>
+                        <p><i class="graduation cap icon"></i>Associates Degree, Economics @ West Valley College | 2021</p>
+                    </p>
+
+                </div>
+
+                <a class="ui violet ribbon label">Experience</a>
+                <div>
+                    <p>
+                        <p>
+                            <i class="briefcase icon"></i>Finance Intern, City of Campbell (Nov 2019 - Apr 2020)
+                        </p>
+                    </p>
+                </div>
                 <a class="ui red ribbon label">Projects</a>
+                <p>
                 <div class="ui three column grid">
                     <div class="six wide computer six wide tablet eight wide mobile column">
                         <p><b>Sentiment Analysis</b></p>
@@ -39,10 +75,10 @@
                     </div>
 
                 </div>
-
-				<a class="ui blue ribbon label">Contact</a> 
+                </p>
+				<a class="ui green ribbon label">Contact</a> 
 				<p>
-				<p><a  href="https://github.com/vlexvnder"><i style="color: black;" class="github icon"></i> Github</a></p>
+				<p><a href="https://github.com/vlexvnder"><i style="color: black;" class="github icon"></i> Github</a></p>
 				<p><a href="https://www.linkedin.com/in/alexandersgoldberg/"><i style="color: black;" class="linkedin icon"></i> Linkedin</a></p>
 				</p>
 			</div>

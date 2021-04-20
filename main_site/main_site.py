@@ -8,8 +8,10 @@ main_site = Blueprint("main_site", __name__,
     static_url_path="/main_site/static" 
 )
 
-sweets = ["chocolate chip cookies", "chocolate cake", "candy", "ice cream", "jelly beans"]
+veggies = ["lettuce", "beets", "broccoli", "brussel sprouts" ]
+sweets = ["chocolate chip cookies", "chocolate cake", "ice cream", "jelly beans", "snickerdoodles"]
+sweets2 = ["gummy bears", "gummy worms", "cotton candy", "taffy"]
 
 @main_site.route("/")
 def index():
-    return render_template("main_index.html", sweet = random.choice(sweets))
+    return render_template("main_index.html", veggie = random.choice(veggies), sweet = random.choice(sweets), sweet2 = random.choice(sweets2))
