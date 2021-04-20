@@ -9,21 +9,26 @@
 	margin-top: 50px;
 
 	}
+    @media only screen 
+    and (max-device-width : 600px) {
+        body{ zoom: 200%;}
+
+    }   
 
 
 </style>
 <body>
 
-    <!--TODO: Set up mobile version redirect-->
+
 <div>
 	<h1>Alex Goldberg</h1>
 	<p>Have some {{sweet}}!</p>
-	<div class="ui one column centered grid" >
-		<div class="four wide column">
+	<div class="ui centered grid" >
+		<div class="four wide computer twelve wide tablet twelve wide mobile column">
 			<div class="ui raised segment">
                 <a class="ui red ribbon label">Projects</a>
                 <div class="ui three column grid">
-                    <div class="seven wide column">
+                    <div class="six wide computer six wide tablet eight wide mobile column">
                         <p><b>Sentiment Analysis</b></p>
                         <p><b>Morse Code Chat</b></p>
                     </div>
