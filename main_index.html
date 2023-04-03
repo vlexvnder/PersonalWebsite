@@ -1,0 +1,138 @@
+<head>
+	<title>Alexander Goldberg</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+		integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+		crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"
+		integrity="sha512-dqw6X88iGgZlTsONxZK9ePmJEFrmHwpuMrsUChjAw1mRUhUITE5QU9pkcSox+ynfLhL15Sv2al5A0LVyDCmtUw=="
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+</head>
+<style>
+	body {
+		text-align: center;
+		margin-top: 50px;
+	}
+
+	@media only screen and (max-device-width : 600px) {
+		body {
+			zoom: 200%;
+		}
+	}
+</style>
+
+<body>
+	<script>
+		$(document).ready(function () {
+			var typed = new Typed('.hi', {
+				strings: ['Welcome!', 'Hello!',
+					"What's up!"
+				],
+				showCursor: false,
+				smartBackspace: true, // Default value
+				typeSpeed: 50,
+				backSpeed: 100
+			});
+		});
+	</script>
+	<script language='javascript'>
+		$(document).ready(function () {
+			$('.ui.accordion').accordion();
+		});
+	</script>
+	<div>
+		<h1>Alex Goldberg</h1>
+		<p class="hi"></p>
+		<div class="ui centered grid">
+			<div class="eight wide computer twelve wide tablet twelve wide mobile column">
+				<div class="ui raised segment">
+					<a class="ui blue ribbon label">Bio</a>
+					<div>
+						<p>
+							<p><i class="graduation cap icon"></i>Freshman @ UC Berkeley</p>
+							<p><i class="book icon"></i>Studying Computer Science and Data Science</p>
+							<p><i class="graduation cap icon"></i>Associates Degree, Economics @ West Valley College |
+								2021</p>
+						</p>
+					</div>
+					<a class="ui violet ribbon label">Experience</a>
+					<div>
+						<div class="ui accordion">
+							<div class="title">
+								<i class="dropdown icon"></i>
+								<i class="briefcase icon"></i>Finance Intern, City of Campbell (Nov 2019 - Apr 2020)
+							</div>
+							<div class=" content">
+								<div class="ui list">
+									<div class="item">Investigated and recorded previously unreported fixed assets.
+										Created criteria to identify future improperly reported fixed assets and
+										implemented them using Google Sheets and Google Visualization API Query
+										Language. Used Google Apps Script to generate reports</div>
+									<div class="item">Responsible for reconciling bank statements with the general fund
+										on a monthly basis. Wrote macros in VBA to increase efficiency</div>
+									<div class="item">Determined monthly allocations for capital projects using budgeted
+										rates and prepared related journal entries</div>
+									<div class="item">Calculated and journalized the distribution of interest between
+										the city’s funds</div>
+								</div>
+							</div>
+						</div>
+						<br>
+					</div>
+					<a class="ui red ribbon label">Projects</a>
+					<p>
+						<div class="ui center aligned three column doubling stackable relaxed grid">
+
+							<div class="column">
+								<p><b>Sentiment Analysis</b></p>
+								<p><span><a href="https://github.com/emote-sentiment-analysis/backend"><span
+												class="ui label"><i class="black github icon"></i>Code</span></a> <a
+											href="/sentiment"><span class="ui label"><i class="red globe icon"></i>
+												Live!</span></a></span></p>
+							</div>
+
+							<div class="column">
+
+								<p><b>Morse Code Chat</b></p>
+								<p><span><a href="https://github.com/vlexvnder/Morse-Code-Chat"><span
+												class="ui label"><i class="black github icon"></i>Code</span></a> <a
+											href="/morse"><span class="ui label"><i class="red globe icon"></i>
+												Live!</span></a></span></p>
+							</div>
+
+							<div class="column">
+
+								<p><b>ServerBoard</b></p>
+								<p><span><a href="https://github.com/vlexvnder/ServerBoard"><span
+												class="ui label"><i class="black github icon"></i>Code</span></a>
+							</div>
+
+							<div class="column">
+
+								<p><b>FractionCalc</b></p>
+								<p><span><a href="https://github.com/vlexvnder/FractionCalc"><span
+												class="ui label"><i class="black github icon"></i>Code</span></a>
+							</div>
+						</div>
+
+
+
+					</p>
+					<a class="ui green ribbon label">Contact</a>
+					<p>
+						<p><a href="https://www.instagram.com/alex.gberg/"><i style="color: black;"
+									class="instagram icon"></i> @alex.gberg</a></p>
+						<p><a href="https://github.com/vlexvnder"><i style="color: black;" class="github icon"></i>
+								Github</a></p>
+						<p><a href="https://www.linkedin.com/in/alexandersgoldberg/"><i style="color: black;"
+									class="linkedin icon"></i> Linkedin</a></p>
+					</p>
+				</div>
+				<p style="text-align: center;"><i style="color: black;" class="github icon"></i><a
+						href="https://github.com/vlexvnder/PersonalWebsite">See how this site was made</a></p>
+			</div>
+		</div>
+	</div>
+	</div>
+</body>
