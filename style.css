@@ -36,21 +36,52 @@ html {
     display: table;
 }
 
+.logo {
+  @media only screen and (max-width: 800px){
+    width: 30;
+    height: 30;
+  }
+  @media only screen and (min-width: 801px){
+    width: 60;
+    height: 60;
+  }
+}
 .really-big {
-  font-size: 250%;
+  @media only screen and (max-width: 800px){
+    font-size: 250%;
+  }
+  @media only screen and (min-width: 801px){
+    font-size: 500%;
+  }
 }
 
 .big {
-  font-size: 200%;
+  @media only screen and (max-width: 800px){
+    font-size: 200%;
+  }
+  @media only screen and (min-width: 801px){
+    font-size: 400%;
+  }
+ 
 }
 
 .med {
-  font-size: 80%;
+  @media only screen and (max-width: 800px){
+    font-size: 80%;
+  }
+  @media only screen and (min-width: 801px){
+    font-size: 160%;
+  }
   letter-spacing: .5px;
 }
 
 .small {
-  font-size: 65%;
+  @media only screen and (max-width: 800px){
+    font-size: 65%;
+  }
+  @media only screen and (min-width: 801px){
+    font-size: 130%;
+  }
   letter-spacing: .5px;
 }
 
@@ -66,23 +97,38 @@ html {
     width: 350px;
   }
   @media only screen and (min-width: 801px){
-    height: 200px;
-    width: 350px;
+    height: 400px;
+    width: 700px;
   }
-  margin: 20vh auto 0 auto;
+  margin: 20vh auto 2vh auto;
   padding: 15px 10px 190px 10px;
-  /* transform: rotateX(60deg) rotateY(0deg) rotateZ(45deg); */
+  @media only screen and (min-width: 801px){
+    transform: rotateX(60deg) rotateY(0deg) rotateZ(45deg);
+    transition: transform .8s ease,
+              height .8s ease,
+              width .8s ease,
+              box-shadow .8s ease;
+  }
+  
   /*transform-origin: 50% 100%;*/
   box-shadow: 0px 10px 10px rgba(0, 0, 0, .4);
 }
 
-/* .card:hover {
-  cursor: pointer;
-  transform: rotateX(60deg) rotateY(0deg) rotateZ(45deg) translateZ(10px);
+.card:hover {
+  @media only screen and (min-width: 801px){
+  transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg) translateZ(10px);
   box-shadow: 20px 20px 20px rgba(0, 0, 0, .4);
-} */
+  transition: transform .8s ease,
+              height .8s ease,
+              width .8s ease,
+              box-shadow .8s ease;
+} 
+}
 
-/* .card:focus {
+
+
+/*
+ .card:focus {
   transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg) translateZ(10px);
   box-shadow: 0px 10px 10px rgba(0, 0, 0, .4);
 }
@@ -96,6 +142,8 @@ html {
   transform: skewY(0deg) translateX(0px) translateY(0px);
   width: 0px;
 }
+
+
 
 .card::before,
 .card::after {
@@ -122,17 +170,22 @@ html {
   top: 0;
   right: 0;
   transform: skewY(45deg) translateX(6px) translateY(-3px);
-} */
+}  */
 
 .row {
   display: block;
   text-align: center;
+  margin: 0 0 -10px 0;
 }
 
 .row:nth-child(2) {
   margin: 35px 0 50px 0;
 }
 
+
+.row:nth-child(3) {
+  margin: 5px 0 3px 0;
+}
 .left {
   float: left;
 }
