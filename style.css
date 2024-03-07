@@ -20,10 +20,14 @@ html {
   box-sizing: inherit;
   font-size: 10.5px;
   letter-spacing: 1px;
-  text-shadow: 0 0 2px rgba(0, 0, 0, .5),
+  /* text-shadow: 0 0 2px rgba(0, 0, 0, .5),
                 -1px -1px 1px rgba(179, 179, 179, .5),
                 1px 1px 0 rgba(255, 255, 255, 0.55),
-                0 1px 3px white;
+                0 1px 3px white; */
+                text-shadow: -2px 2px 4px 
+                rgba(0, 0, 0, 0.5),  
+                2px -2px 0 
+                rgba(244, 241, 235, 0.9); 
   overflow: hidden;
   color: #191919;
   background-color: azure;
