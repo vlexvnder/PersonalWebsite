@@ -2,7 +2,10 @@
   Hover and click on the card for animations!
 */
 
+@import url(https://fonts.googleapis.com/css2?family=Libre+Baskerville);
 @import url(https://fonts.googleapis.com/css?family=Cormorant+Garamond);
+@import url(https://fonts.googleapis.com/css2?family=Libre+Franklin);
+
 
 *,
 *::before,
@@ -15,19 +18,12 @@ a {
   cursor: pointer;
 }
 html {
-  font-family: "Cormorant Garamond", serif;
+  font-family: 'Libre Franklin', serif;
   text-transform: uppercase;
   box-sizing: inherit;
   font-size: 10.5px;
   letter-spacing: 1px;
-  /* text-shadow: 0 0 2px rgba(0, 0, 0, .5),
-                -1px -1px 1px rgba(179, 179, 179, .5),
-                1px 1px 0 rgba(255, 255, 255, 0.55),
-                0 1px 3px white; */
-                text-shadow: -2px 2px 4px 
-                rgba(0, 0, 0, 0.5),  
-                2px -2px 0 
-                rgba(244, 241, 235, 0.9); 
+
   overflow: hidden;
   color: #191919;
   background-color: azure;
@@ -49,6 +45,20 @@ html {
     width: 60;
     height: 60;
   }
+  fill: gray; /* Change black to gray */
+  filter: drop-shadow(-2px -2px 2px rgba(255, 255, 255, 0.7))  /* Light shadow */
+            drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5));         /* Dark shadow */
+}
+
+.shadowed {
+  /* text-shadow: 0 0 2px rgba(0, 0, 0, .5),
+                -1px -1px 1px rgba(179, 179, 179, .5),
+                1px 1px 0 rgba(255, 255, 255, 0.55),
+                0 1px 3px white; */
+                text-shadow: -2px 2px 4px 
+                rgba(0, 0, 0, 0.5),  
+                2px -2px 0 
+                rgba(244, 241, 235, 0.9); 
 }
 .really-big {
   @media only screen and (max-width: 800px){
@@ -201,3 +211,4 @@ html {
 p {
   margin: 0;
 }
+
